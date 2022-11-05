@@ -1,0 +1,59 @@
+.mydiv {
+	position: relative;
+	margin: 0.5% auto ;
+	width: 99%;
+	height: 200px;
+    background: linear-gradient(90deg, #000, #323232);
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+
+    .sometxt {
+    color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;   
+	font-size: small;
+	padding:10px;
+		@media (min-width: 820px){
+        	font-size: large;
+        }
+    }
+
+}
+
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -13px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+	@media (min-width: 820px){
+		top: -8px;
+	}
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}

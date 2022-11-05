@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/*estilosGenerales*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*navbar color*/
+.navbar-color {
+  background-color: #525252;
+}
+
+/*banner*/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/design-header.jpg);
+  color: blanchedalmond;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner .banner-title {
+  color: blanchedalmond;
+}
+
+/*about-us*/
+.about-us .about-container {
+  text-align: center;
+  padding: 120px 120px;
+}
+@media (min-width: 820px) {
+  .about-us .about-container .about-image {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/Maquina.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+}
+@media (min-width: 820px) {
+  .about-us .about-container .about-text {
+    width: 50%;
+    text-align: initial;
+    padding: 0px 40px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 820px) {
+  .about-us .about-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*infoblocks*/ /*variables*/
+.info-block {
+  background-color: rgb(45, 45, 45);
+}
+.info-block .info-text {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+@media (min-width: 820px) {
+  .info-block .info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .info-block .info-text p {
+    font-size: 20px;
+  }
+  .info-block .info-text h3 {
+    font-size: 30px;
+  }
+}
+.info-block .info-image {
+  text-align: center;
+  margin: 10px;
+}
+.info-block .info-image .image-space {
+  border-radius: 20px;
+  clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 20%);
+}
+@media (min-width: 820px) {
+  .info-block .info-image {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+}
+@media (min-width: 820px) {
+  .info-block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
+.background-exodo, .carousel-container {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/Background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.carousel-container .carousel-title {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.carousel-container .carousel-dimention {
+  width: 90%;
+  margin: 30px auto;
+}
+@media (min-width: 820px) {
+  .carousel-container .carousel-dimention {
+    width: 60%;
+  }
+}
+
+footer {
+  background-color: #414141;
+  margin-top: auto;
+}
+footer .copy {
+  margin: 0;
+}
+footer .footer-image-container {
+  padding: 20px 20px;
+}
+footer .footer-container {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-container .footer-direction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .footer-container .footer-direction .footer-p {
+  margin: 0;
+  color: white;
+  padding: 12px;
+}
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+footer .footer-contact .footer-p {
+  margin: 0;
+  color: white;
+  padding: 12px;
+}
+
+.mydiv {
+  position: relative;
+  margin: 0.5% auto;
+  width: 99%;
+  height: 200px;
+  background: linear-gradient(90deg, #000, #323232);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.mydiv .sometxt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  padding: 10px;
+}
+@media (min-width: 820px) {
+  .mydiv .sometxt {
+    font-size: large;
+  }
+}
+
+.animate-bg:before, .animate-bg:after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: -13px;
+  background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5, #ff004c, #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff);
+  background-size: 300%;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  z-index: -1;
+  animation: BGgradient 15s ease infinite;
+}
+@media (min-width: 820px) {
+  .animate-bg:before, .animate-bg:after {
+    top: -8px;
+  }
+}
+
+@keyframes BGgradient {
+  0% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 330%;
+  }
+}
+.animate-bg:after {
+  filter: brightness(1.4);
+  filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+  filter: blur(15px);
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 220px;
+  padding: 20px;
+  gap: 15px;
+}
+.gallery-container .gallery-item {
+  grid-column: span 1;
+  grid-row: span 1;
+  position: relative;
+}
+@media (min-width: 820px) {
+  .gallery-container .gallery-item {
+    position: relative;
+  }
+}
+.gallery-container .gallery-item .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-container .gallery-item .gallery-title {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(76, 76, 76, 0.7);
+  width: 100%;
+  padding: 5px 2px;
+  font-weight: 200;
+  font-size: 20px;
+}
+@media (min-width: 820px) {
+  .gallery-container .gallery-item .gallery-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 820px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px; /*completa automaticamente la cantidad de filas, dependiendo de la cantidad de imagenes que yo tenga, y que a su vez, estas tengan un determinado tamaño*/
+    padding: 20px;
+    gap: 15px;
+  }
+}
+
+/* mapas */
+.background-exodo, .carousel-container {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/Background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.form-container {
+  background-color: grey;
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.form-container .btn-center {
+  text-align: center;
+  background-color: darkgray;
+  width: 30%;
+  margin: 0 auto;
+}
+.form-container .form-pad {
+  padding: 10px;
+}
+
+/*variables*/ /* mapas */
+.carousel-container, .background-exodo {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/Background.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.icono {
+  margin: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+footer{
+    background-color: #414141;
+    margin-top: auto;
+    .copy{
+        margin: 0;
+    }
+    .footer-image-container{
+        padding: 20px 20px;
+    }
+    .footer-container{ 
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+
+        .footer-direction{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            .footer-p{
+                margin: 0;
+                color: white;
+                padding: 12px;
+            }
+        }
+        
+    }
+
+    .footer-contact{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+        .footer-p{
+            margin: 0;
+            color: white;
+            padding: 12px;
+        }
+    }
+
+    }
+

@@ -1,0 +1,6 @@
+
+@mixin carousel($colors, $font-size, $text-aling) {
+    color:$colors;
+    font-size: $font-size;
+    text-align: $text-aling;
+}

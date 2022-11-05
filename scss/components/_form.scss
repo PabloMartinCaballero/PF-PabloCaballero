@@ -1,0 +1,27 @@
+@import "../base/mapas";
+@import "../base/extend";
+
+.background-exodo{
+ @extend %back-ground-exodo;
+}
+.form-container{
+    background-color:grey;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+    .btn-center{
+        text-align: map-get($boton, text-align);
+        background-color: map-get($boton, background-color);
+        width: map-get($boton , width);
+        margin: map-get($boton, margin );
+    } 
+
+
+    .form-pad{
+        padding: 10px;
+    }
+
+}

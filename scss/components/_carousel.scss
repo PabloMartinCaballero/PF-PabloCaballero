@@ -1,0 +1,20 @@
+@import "../base/extend";
+@import "../base/mixin";
+
+.carousel-container{
+    @extend %back-ground-exodo;
+    .carousel-title{
+        @include carousel(white,30px,center);
+    }
+
+    .carousel-dimention{
+        width: 90%;
+        margin: 30px auto;
+
+        @media (min-width: 820px){
+            width: 60%;
+            }
+    }
+    
+}
+
